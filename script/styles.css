@@ -1,0 +1,296 @@
+body {width: 100%; height: 100%;}
+a {border: none; text-decoration: none;}
+.myImage {position: fixed; top: 0; left: 0;}
+.container {width: 100%; margin: 30px auto -150px auto; text-align: center;}
+.myAction {width: 100px; margin: 10px auto; background: #CCC; padding: 5px; border: 1px solid #CCC; text-align: center; font: 12px arial, helvetica, times new roman; color: #000;}
+.overlayFX {display: none; position: fixed; z-index: 3; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: 0.65;}
+#pageContainer {display: none; width: 720px; height: 580px; /*border: 1px solid #ccc; -moz-box-shadow: 0px 2px 10px #0099CC;*/}
+.closure {padding: 0px 7px 3px 7px; /*border: 1px solid #000;*/ float: right; margin: -38px -46px 0px 0px; position: relative; z-index: 4;}
+.closure:hover {cursor: pointer;}
+.hed {margin-top: 20px; margin-left: 20px; font: 500 28px arial, helvetica, times new roman; color: #000;}
+img.logo {width: 200px; height: 66px; margin-top: -12px; margin-left: 5px; vertical-align: middle;}
+.dek {text-align: center; font: 500 18px arial, helvetica, times new roman; padding: 0px 10px; color: #000; margin-top: 15px;}
+.explanation {margin-top: 20px; width: 680px;}
+.explanation ul, .explanation ul li ul  {margin: 0px; padding: 0px; list-style-type: none;}
+.explanation ul li {display: block; height: 110px;}
+.explanation ul li.howitWorks {height: 300px;}
+.explanation ul li.howitWorks ul li:last-child {font: 14px arial, helvetica, times new roman; float: right; width: 170px; height: 50px; margin-top: -5px;}
+.explanation ul li ul li {display: inline;}
+.explanation ul li ul li img {margin-right: 15px; vertical-align: middle; float: left;}
+.explanation ul li ul li:last-child {clear: left; font: 24px arial, helvetica, times new roman; color: #999;}
+.invite {width: 680px; height: 330px; text-align: center; border: none;}
+.genre {width: 640px; margin-bottom: 10px; border: 6px solid #CCC; padding-bottom: 10px;}
+.genre:first-child {margin-top: -20px;}
+.genreType {font: 600 16px arial, helvetica, times new roman; padding: 5px 8px 40px; color: #000;}
+.genre img {margin-left: 5px;}
+.genre img:hover, .skip:hover {cursor: pointer;}
+.genreType img {vertical-align: middle; float: left;}
+.gameType {margin: -60px 0px 0px 55px;}
+img.gameType:hover {cursor: default;}
+.howitWorks {float: left; width: 220px; height: 412px; border: 1px solid #999; padding-top: 10px;}
+#midWorks {margin: 0px 7px;}
+.numerology {font: 16px arial, helvetica, times new roman; color: #999; margin: 10px 5px; border: 1px solid #CCC; padding: 5px 10px;}
+.clearance {clear: both;}
+.control {color: #000;}
+
+.fb_onboard_choices {text-align: center; margin: 30px 117px; width: 100%;}
+.fb_onboard_choices DIV:first-child {margin-right: 10px;}
+.fb_onboard_choices DIV {float: left; font: 12px arial, helvetica, times new roman; color: #666;}
+/*.fb_onboard_choices img, .fb_onboard_deselected {border: 6px solid #CCC;}
+.fb_onboard_choices img:hover, .fb_onboard_selected {border: 6px solid #99CCFF;} 
+.gender DIV:first-child:hover {border: 3px solid pink; background: pink;}
+.gender DIV:hover {border: 3px solid #0099CC; background: #0099CC;} */
+.platform {margin: 30px -3px; width: 695px;}
+.fb_choice_female {background: url(../img/icon_female.jpg);}
+.fb_pink_female {border: 6px solid pink !important;}
+.fb_choice_male {background: url(../img/icon_male.jpg);}
+.fb_choice_solo {background: url(../img/icon_solo.jpg);}
+.fb_choice_multiplayer {background: url(../img/icon_multiplayer.jpg);}
+.fb_choice_shortbursts {background: url(../img/icon_shortbursts.jpg);}
+.fb_choice_hourglass {background: url(../img/icon_hourglass.jpg);}
+.fb_choice_desktop {background: url(../img/icon_desktop.jpg);}
+.fb_choice_mobile {background: url(../img/icon_mobile.jpg);}
+.fb_choice_console {background: url(../img/icon_console.jpg);}
+
+.fb_blue_male, 
+.fb_select_solo, 
+.fb_select_multiplayer, 
+.fb_select_shortbursts,
+.fb_select_hourglass,
+.fb_select_desktop, 
+.fb_select_mobile,
+.fb_select_console {border: 6px solid #99CCFF !important;}
+
+.fb_choice_female,
+.fb_choice_male, 
+.fb_choice_solo, 
+.fb_choice_multiplayer, 
+.fb_choice_shortbursts, 
+.fb_choice_hourglass, 
+.fb_choice_desktop, 
+.fb_choice_mobile, 
+.fb_choice_console {
+	background-repeat: no-repeat;
+	border: 6px solid #CCC;
+}
+
+.fb_choice_female:hover,
+.fb_choice_male:hover, 
+.fb_choice_solo:hover, 
+.fb_choice_multiplayer:hover, 
+.fb_choice_shortbursts:hover, 
+.fb_choice_hourglass:hover, 
+.fb_choice_desktop:hover, 
+.fb_choice_mobile:hover, 
+.fb_choice_console:hover {
+	cursor: pointer;
+	border: 6px solid #00FF66;
+}
+
+
+.fb_onboard_description {margin: 5px; text-align: center; width: 100%;}
+.fb_onboard_description DIV:first-child {margin-left: 190px;}
+.fb_onboard_description DIV {float: left; padding: 10px; margin-left: 175px; font: 12px arial, helvetica, times new roman; color: #666;}
+.fb_choices {text-align: center; width: 100%; margin-top: 10px;}
+
+.fb_horoscope {float: left; width: 220px; padding: 5px 10px; border: 1px solid #CCC; font: 12px arial, helvetica, times new roman; color: #000; text-align: left;}
+.fb_profile_type {float: right; width: 430px; margin-top: -5px; padding: 5px 0px;}
+.fb_profile_type DIV {float: left; width: 128px; text-align: center; border: 1px solid #CCC; padding: 5px; font: 12px arial, helvetica, times new roman; color: #000;}
+.fb_profile_image {float: right; width: 428px; height: 100px; padding: 5px 0px; border: 1px solid #CCC;}
+.fb_matchmaker {float: right; width: 428px; padding: 5px 0px;}
+.onboard_matches {float: right; width: 428px; padding: 5px 0px;}
+.onboard_matches DIV {float: left; margin-top: 10px; text-align: left; width: 185px; color: #000; font: 12px arial, helvetica, times new roman;}
+.onboard_matches DIV:first-child {width: 147px;}
+.onboard_matches img {width: 25px; height: 25px; padding: 5px; border: 1px solid #CCC; margin: 0px 10px 0px 0px; vertical-align: middle;}
+.onboard_matches DIV:last-child {float: right; width: 63px; margin-top: 10px; font: 600 24px arial, helvetica, times new roman; color: #0099CC;}
+.match_name {float: left; width: 92px; color: #000; font: 12px arial, helvetica, times new roman; text-align: left; margin: 10px 0px 0px 10px; vertical-align: middle;}
+
+.onboard_matches_description {margin-top: 10px; float: none; width: 340px;}
+.fb_matchmaker ul {margin: 0px; padding: 0px; list-style-type: none;}
+.fb_matchmaker ul li {display: block; margin-top: 5px; height: 40px !important; text-align: left;}
+.fb_matchmaker ul li ul {margin: 0px; padding: 0px; list-style-type: none;}
+.fb_matchmaker ul li ul li {max-width: 100px; display: inline; margin-left: 10px; font: 12px arial, helvetica, times new roman; color: #000; text-align: center;}
+.fb_matchmaker ul li ul li img {width: 25px; height: 25px; border: 1px solid #CCC; margin-right: 0px; margin-top: 7px;}
+.fb_matchmaker ul li ul li:first-child {max-width: 100%; padding: 10px 5px;}
+.fb_matchmaker ul li ul li:last-child {max-width: 100%; font: 24px arial, helvetica, times new roman; color: #0099CC; margin-left: 19px;}
+.onboard_cloud {position: absolute; z-index: 4; top: 30px; right: 450px; width: 290px; height: 70px; padding: 90px 5px 0px 5px; background: url(img/cloud.png); background-repeat: no-repeat; font: bold 14px arial, helvetica, times new roman; color: #000;}
+.onboard_cloud_directives {margin: -130px 0px 0px 90px; width: 230px; text-align: center; color: #000; font: bold 14px arial, helvetica, times new roman;}
+.onboard_console {width: 490px; text-align: left; margin: 0px auto; position: absolute; top: 560px;}
+.onboard_profile {position: relative; top: 0px; left: 30px;}
+.onboard_profile img {border: 1px solid #CCC; width: 35px; height: 35px; vertical-align: middle;}
+.onboard_greeting {font: 12px arial, helvetica, times new roman; color: #000; margin-left: 10px;}
+.onboard_progress {width: 28.5714286px; height: 15px; background: #CCC;}
+.onboard_progress_underlay {width: 200px; height: 15px; border: 1px solid #CCC; position: absolute; top: 10px; left: 253px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+.onboard_calculation {position: absolute; top: 10px; left: 463px; font: 12px arial, helvetica, times new roman; color: #000;}
+
+/** 
+ * Slideshow style rules.
+ */
+#slideshow {
+	margin:0 auto;
+	/*width:640px;*/
+	width:700px;
+	height:600px;
+	/*background:transparent url(../img/bg_slideshow.jpg) no-repeat 0 0;*/
+	position:relative;
+}
+#slideshow #slidesContainer {
+  margin: 0px auto;
+  /*width:560px;*/
+  width:710px;
+  height:600px;
+  overflow:auto; /* allow scrollbar */
+  position:relative;
+}
+#slideshow #slidesContainer .slide {
+  margin:0 10px 0 10px;
+  width:540px; /* reduce by 20 pixels of #slidesContainer to avoid horizontal scroll */
+  height:263px;
+  /*background: #FFF;
+  border: 1px solid #C9C9C9;
+  -moz-border-radius: 5px;
+  -moz-box-shadow: 0px 5px 12px #EFEFEF;*/
+}
+
+/** 
+ * Slideshow controls style rules.
+ */
+.control {
+  display:block;
+  /*width:39px;
+  height:263px;*/
+  position:relative;
+  cursor: pointer;
+  z-index: 2000;
+  margin-top: -48px;
+  padding: 4px 10px;
+  border: 1px solid #999;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: -moz-linear-gradient(top,  #FFF, #F3F3F3);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#F3F3F3));
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){#rightControl, #noThanks {margin-top: -33px;}}
+
+.control:hover, #noThanks:hover {
+	background: -moz-linear-gradient(top,  #FCFCFC, #FFF);
+	background: -webkit-gradient(linear, left top, left bottom, from(#FCFCFC), to(#FFF));
+}
+#leftControl {
+  top:52px;
+  left:533px;
+  color: #000;
+  position: absolute;
+  font: 14px arial, helvetica, times new roman; 
+  vertical-align: middle; 
+  color: #000;
+  padding: 4px 25px;
+  /*background:transparent url(../img/control_left.jpg) no-repeat 0 0;*/
+}
+
+.conroller:hover {
+	color: #0099CC;
+}
+
+#rightControl,
+#noThanks {
+  top:0;
+  left: 210px;
+  /*background:transparent url(../img/control_right.jpg) no-repeat 0 0;*/
+  color: #000;
+  float: right;
+  font: 14px arial, helvetica, times new roman; 
+  vertical-align: middle; 
+  color: #000;
+}
+
+#noThanks {
+  display: none;
+  margin-top: 42px;
+  padding: 4px 28px;
+  border: 1px solid #999;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: -moz-linear-gradient(top,  #FFF, #F3F3F3);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#F3F3F3));
+  z-index: 5;
+}
+
+#noThanks:hover {
+	cursor: pointer;
+}
+
+
+#leftControl:hover, #rightControl:hover, #noThanks:hover {
+	color: #0099CC;
+}
+
+/** 
+ * Style rules for Demo page
+ */
+* {
+  margin:0;
+  padding:0;
+  font:normal 11px Verdana, Geneva, sans-serif;
+  color:#ccc;
+}
+
+.slide a {
+  color: #999;
+  text-decoration:none;
+}
+a:hover {
+  text-decoration:underline;
+}
+body {
+  /*background:#393737 url(../img/bg_body.jpg) repeat-x top left;*/
+  background: #FFF;
+}
+#pageContainer {
+  margin:0 auto;
+  width:660px;
+}
+#pageContainer h1 {
+  display:block;
+  width:960px;
+  height:114px;
+  /*background:transparent url(../img/bg_pagecontainer_h1.jpg) no-repeat top left;*/
+  text-indent: -10000px;
+}
+.slide h2, .slide p {
+  margin:15px 12px;
+}
+.slide p {
+	color: #666;
+	font:12px Helvetica, Arial, "Times New Roman", Times, serif;
+	line-height: 1.4em;
+}
+.slide h2 {
+  font: 600 24px Arial, "Times New Roman", Times, serif;
+  letter-spacing: 0px;
+  /*text-transform: uppercase;
+  color:#ccc;*/
+  color: #666;
+}
+/*.slide img {
+  float:right;
+  margin:0 auto 20 auto;
+  width: 240px;
+  height: 150px;
+  border: 1px solid #c3c3c3;
+  border-right: 1px dotted #CFCFCF;
+  border-left: 1px dotted #CFCFCF;
+}*/
+#footer {
+  height:100px;
+}
+#footer p {
+  margin:30px auto 0 auto;
+  display:block;
+  width:560px;
+  height:40px;
+}
+
+/* dialog styles */
+.tact1 {opacity: 0;}
